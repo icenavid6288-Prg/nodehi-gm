@@ -5,7 +5,7 @@
   "type": "module",
   "description": "فروشگاه اینترنتی لوازم خانگی نودهی — React + TypeScript و Laravel (MongoDB / NoSQL)",
   "scripts": {
-    "dev": "node scripts/seed-mongodb.mjs && vite --host 0.0.0.0 --port 3000",
+    "dev": "vite",
     "build": "node scripts/seed-mongodb.mjs && tsc --noEmit && vite build && node scripts/build-cpanel-mongodb.mjs",
     "start": "vite preview --host 0.0.0.0 --port 3000",
     "preview": "vite preview --host 0.0.0.0 --port 3000",

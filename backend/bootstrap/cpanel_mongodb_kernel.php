@@ -8,7 +8,17 @@ declare(strict_types=1);
 
 namespace Nodehi\CpanelMongoKernel;
 
-require_once __DIR__ . '/../app/Services/MongoDocumentStore.php';
+$mongoStorePaths = [
+    __DIR__ . '/MongoDocumentStore.php',
+    __DIR__ . '/../app/Services/MongoDocumentStore.php',
+    __DIR__ . '/backend/app/Services/MongoDocumentStore.php',
+];
+foreach ($mongoStorePaths as $msPath) {
+    if (file_exists($msPath)) {
+        require_once $msPath;
+        break;
+    }
+}
 
 use App\Services\MongoDocumentStore;
 use Throwable;
@@ -23,9 +33,9 @@ class Kernel
         $this->publicDir = rtrim($publicDir, '/\\');
 
         $candidateDirs = [
-            $this->publicDir . '/../backend/database/mongodb',
-            $this->publicDir . '/backend/database/mongodb',
             $this->publicDir . '/database/mongodb',
+            $this->publicDir . '/backend/database/mongodb',
+            $this->publicDir . '/../backend/database/mongodb',
             dirname(__DIR__) . '/database/mongodb',
         ];
 
@@ -38,9 +48,9 @@ class Kernel
         }
 
         if (!$mongoDir) {
-            $mongoDir = is_dir($this->publicDir . '/../backend/database')
-                ? $this->publicDir . '/../backend/database/mongodb'
-                : $this->publicDir . '/database/mongodb';
+            $mongoDir = is_dir($this->publicDir . '/database')
+                ? $this->publicDir . '/database/mongodb'
+                : $this->publicDir . '/backend/database/mongodb';
             if (!is_dir($mongoDir)) {
                 @mkdir($mongoDir, 0755, true);
             }
@@ -72,11 +82,22 @@ class Kernel
             return;
         }
 
-        $indexHtml = $this->publicDir . '/index.html';
-        if (file_exists($indexHtml)) {
-            header('Content-Type: text/html; charset=utf-8');
-            readfile($indexHtml);
-            exit;
+        // اولویت با فایل کامپایل‌شده فرانت‌اند (spa.html یا dist/index.html) تا در صورت آپلود مستقیم ریپوزیتوری نیز صفحه سفید نشود
+        $htmlCandidates = [
+            $this->publicDir . '/spa.html',
+            $this->publicDir . '/dist/index.html',
+            $this->publicDir . '/index.html',
+        ];
+
+        foreach ($htmlCandidates as $htmlFile) {
+            if (file_exists($htmlFile)) {
+                $content = (string) file_get_contents($htmlFile);
+                if (strpos($content, '/src/main.tsx') === false) {
+                    header('Content-Type: text/html; charset=utf-8');
+                    echo $content;
+                    exit;
+                }
+            }
         }
 
         $this->json([
@@ -110,7 +131,19 @@ class Kernel
             // 2. Install status & setup
             if ($path === '/install') {
                 $products = $this->store->readCollection('products');
+                $categories = $this->store->readCollection('categories');
+                $brands = $this->store->readCollection('brands');
+                $coupons = $this->store->readCollection('coupons');
+                $orders = $this->store->readCollection('orders');
                 $users = $this->store->readCollection('users');
+                $settingsRows = $this->store->readCollection('settings');
+                $settingsMap = [];
+                foreach ($settingsRows as $sr) {
+                    if (!empty($sr['key'])) {
+                        $settingsMap[(string) $sr['key']] = (string) ($sr['value'] ?? '');
+                    }
+                }
+
                 $adminUser = null;
                 foreach ($users as $u) {
                     if (($u['role'] ?? '') === 'SUPER_ADMIN' || ($u['role'] ?? '') === 'ADMIN') {
@@ -127,14 +160,26 @@ class Kernel
                         'adminExists' => $adminUser !== null,
                         'catalogSeeded' => count($products) > 0,
                         'adminPhone' => $adminUser['phone'] ?? '09120000000',
+                        'adminName' => $adminUser['name'] ?? 'مدیر فروشگاه نودهی',
+                        'storeName' => $settingsMap['store_name'] ?? 'فروشگاه لوازم خانگی نودهی',
+                        'phone' => $settingsMap['phone'] ?? '021-91000000',
+                        'address' => $settingsMap['address'] ?? 'تهران، خیابان ولیعصر، پلاک ۱۲۳، طبقه سوم',
+                        'mongodbUri' => $settingsMap['mongodb_uri'] ?? 'mongodb://127.0.0.1:27017/nodehi_store',
                         'catalogSize' => count($products),
+                        'categoriesCount' => count($categories),
+                        'brandsCount' => count($brands),
+                        'couponsCount' => count($coupons),
+                        'ordersCount' => count($orders),
                         'installerScript' => '/install.php',
                     ]);
                 }
                 if ($method === 'POST') {
-                    $adminPhone = preg_replace('/[^0-9]/', '', (string) ($body['adminPhone'] ?? $body['phone'] ?? '09120000000'));
-                    $adminName = trim((string) ($body['adminName'] ?? $body['name'] ?? 'مدیر فروشگاه نودهی'));
-                    $storeName = trim((string) ($body['storeName'] ?? ''));
+                    $adminPhone = preg_replace('/[^0-9]/', '', (string) ($body['admin_phone'] ?? $body['adminPhone'] ?? $body['phone'] ?? '09120000000'));
+                    $adminName = trim((string) ($body['admin_name'] ?? $body['adminName'] ?? $body['name'] ?? 'مدیر فروشگاه نودهی'));
+                    $storeName = trim((string) ($body['store_name'] ?? $body['storeName'] ?? 'فروشگاه لوازم خانگی نودهی'));
+                    $supportPhone = trim((string) ($body['phone'] ?? '021-91000000'));
+                    $address = trim((string) ($body['address'] ?? ''));
+                    $mongodbUri = trim((string) ($body['mongodb_uri'] ?? ''));
 
                     if (!preg_match('/^09[0-9]{9}$/', $adminPhone)) {
                         $this->json(['ok' => false, 'error' => ['code' => 'invalid_phone', 'message' => 'شماره موبایل مدیر باید ۱۱ رقم و با 09 شروع شود.']], 422);
@@ -154,17 +199,32 @@ class Kernel
                         ]);
                     }
 
-                    if ($storeName !== '') {
-                        $this->store->updateOne('settings', ['key' => 'store_name'], [
-                            '$set' => ['value' => $storeName, 'group' => 'general', 'is_public' => true],
-                        ], true);
+                    $pairs = [
+                        ['store_name', $storeName, 'general', true],
+                        ['phone', $supportPhone, 'general', true],
+                        ['mobile', $adminPhone, 'general', true],
+                        ['address', $address, 'general', true],
+                        ['mongodb_uri', $mongodbUri, 'database', false],
+                    ];
+
+                    foreach ($pairs as [$sKey, $sVal, $sGroup, $sPub]) {
+                        if ($sVal !== '') {
+                            $this->store->updateOne('settings', ['key' => $sKey], [
+                                '$set' => [
+                                    'key' => $sKey,
+                                    'value' => $sVal,
+                                    'group' => $sGroup,
+                                    'is_public' => $sPub,
+                                ],
+                            ], true);
+                        }
                     }
 
                     $this->json([
                         'ok' => true,
                         'installed' => true,
                         'adminPhone' => $adminPhone,
-                        'message' => 'مشخصات مدیر کل و تنظیمات اولیه با موفقیت در دیتابیس MongoDB ذخیره شد.',
+                        'message' => 'مشخصات مدیر کل و تنظیمات فروشگاه با موفقیت در دیتابیس MongoDB ذخیره شد.',
                     ]);
                 }
             }

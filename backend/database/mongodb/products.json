@@ -1,0 +1,783 @@
+[
+  {
+    "_id": "6ae3501d6e6f6465680003e9",
+    "id": 1,
+    "name": "یخچال ساید بای ساید ۳۰ فوت سامسونگ مدل RS68",
+    "name_en": "SAMSUNG SIDE BY SIDE RS68 30FT",
+    "slug": "samsung-side-by-side-rs68-30ft",
+    "sku": "NDH-1001",
+    "category_id": 1,
+    "category_slug": "refrigerator",
+    "brand_id": 1,
+    "brand_slug": "samsung",
+    "price": 89000000,
+    "compare_price": 94000000,
+    "stock": 12,
+    "images": [
+      "/images/products/refrigerator.svg"
+    ],
+    "thumbnail": "/images/products/refrigerator.svg",
+    "short_description": "یخچال ساید بای ساید ۳۰ فوت با کمپرسور اینورتر دیجیتال و سیستم سرمایش دوگانه Twin Cooling",
+    "description": "یخچال ساید بای ساید سامسونگ مدل RS68 با گنجایش ۶۶۸ لیتر، قابلیت اتصال به آب شهری، یخ‌ساز اتوماتیک باریک و فناوری SpaceMax برای حداکثر فضای داخلی.",
+    "specs": {
+      "ظرفیت": "۳۰ فوت (۶۶۸ لیتر)",
+      "نوع کمپرسور": "اینورتر دیجیتال",
+      "یخ‌ساز و آبریز": "اتوماتیک متصل به آب شهری"
+    },
+    "features": [
+      "سیستم خنک‌کننده دوقلو Twin Cooling Plus",
+      "فناوری SpaceMax",
+      "گارانتی ۱۰ ساله کمپرسور"
+    ],
+    "colors": [
+      "استیل دودی",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A++",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 40,
+    "sales_count": 12,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 28,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003ea",
+    "id": 2,
+    "name": "یخچال فریزر دوقلو ال‌جی مدل GR-B404",
+    "name_en": "LG TWIN REFRIGERATOR GR B404",
+    "slug": "lg-twin-refrigerator-gr-b404",
+    "sku": "NDH-1002",
+    "category_id": 1,
+    "category_slug": "refrigerator",
+    "brand_id": 2,
+    "brand_slug": "lg",
+    "price": 92000000,
+    "compare_price": 98000000,
+    "stock": 8,
+    "images": [
+      "/images/products/refrigerator.svg"
+    ],
+    "thumbnail": "/images/products/refrigerator.svg",
+    "short_description": "یخچال و فریزر دوقلو ال‌جی با موتور اینورتر خطی، بدون برفک و کشوی حفظ رطوبت Moist Balance Crisper",
+    "description": "دوقلوی محبوب ال‌جی با ۴۰ فوت فضای خالص ذخیره‌سازی، جریان هوای چندگانه Multi Air Flow و فیلتر بهداشتی هوای داخل کابین.",
+    "specs": {
+      "ظرفیت کل": "۴۰ فوت (۷۵۰ لیتر)",
+      "موتور": "Smart Inverter",
+      "سیستم تهویه": "Multi Air Flow"
+    },
+    "features": [
+      "بدون برفک نوفراست",
+      "کمپرسور کم‌صدا",
+      "روشنایی یکنواخت LED"
+    ],
+    "colors": [
+      "نقره‌ای پلاتینیوم",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 47,
+    "sales_count": 15,
+    "rating_cache": 4.8,
+    "reviews_count_cache": 19,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003eb",
+    "id": 3,
+    "name": "یخچال ساید بای ساید اسنوا سری هایپر مدل SN8-2261",
+    "name_en": "SNOWA SIDE BY SIDE SN8 2261",
+    "slug": "snowa-side-by-side-sn8-2261",
+    "sku": "NDH-1003",
+    "category_id": 1,
+    "category_slug": "refrigerator",
+    "brand_id": 4,
+    "brand_slug": "snowa",
+    "price": 68500000,
+    "compare_price": 72000000,
+    "stock": 15,
+    "images": [
+      "/images/products/refrigerator.svg"
+    ],
+    "thumbnail": "/images/products/refrigerator.svg",
+    "short_description": "ساید بای ساید با طراحی مدرن درب سوم Food Show Case و کمپرسور نسل جدید پربازده اینورتر دیجیتال",
+    "description": "مجهز به فیلتر تصفیه هوای نانو سیلور، سیستم کنترل سرمایش هوشمند Smart Cooling و سامانه گردش هوای سه‌بعدی.",
+    "specs": {
+      "ظرفیت": "۲۷ فوت",
+      "بار خانگی": "دارد (درب سوم)",
+      "فیلتر بوگیر": "نانو کربن دوگانه"
+    },
+    "features": [
+      "سامانه سرمایش سریع Super Cool",
+      "گارانتی ۱۲۴ ماهه کمپرسور",
+      "طراحی ارگونومیک ایرانی"
+    ],
+    "colors": [
+      "سفید متالیک",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 54,
+    "sales_count": 18,
+    "rating_cache": 4.7,
+    "reviews_count_cache": 34,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003ec",
+    "id": 4,
+    "name": "ماشین لباسشویی ۹ کیلویی بوش سری ۸ مدل WAW32560",
+    "name_en": "BOSCH WASHING MACHINE WAW32560 9KG",
+    "slug": "bosch-washing-machine-waw32560-9kg",
+    "sku": "NDH-1004",
+    "category_id": 2,
+    "category_slug": "washer",
+    "brand_id": 3,
+    "brand_slug": "bosch",
+    "price": 49500000,
+    "compare_price": 53000000,
+    "stock": 10,
+    "images": [
+      "/images/products/washer.svg"
+    ],
+    "thumbnail": "/images/products/washer.svg",
+    "short_description": "لباسشویی ۹ کیلویی بوش ساخت آلمان با موتور EcoSilence Drive و فناوری ضدلرزش AntiVibration",
+    "description": "لباسشویی فوق‌کم‌صدا با چرخش ۱۶۰۰ دور در دقیقه، سنسور هوشمند تشخیص وزن ActiveWater Plus و برنامه شستشوی آلرژی‌پلاس.",
+    "specs": {
+      "ظرفیت دیگ": "۹ کیلوگرم",
+      "سرعت چرخش": "۱۶۰۰ دور در دقیقه",
+      "کشور سازنده": "آلمان"
+    },
+    "features": [
+      "موتور بی‌صدا EcoSilence Drive",
+      "فناوری VarioDrum مراقبت از الیاف",
+      "برنامه ضدچروک"
+    ],
+    "colors": [
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "36 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 61,
+    "sales_count": 21,
+    "rating_cache": 5,
+    "reviews_count_cache": 42,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003ed",
+    "id": 5,
+    "name": "ماشین لباسشویی ۸ کیلویی ال‌جی مدل F4V5",
+    "name_en": "LG WASHING MACHINE F4V5 8KG",
+    "slug": "lg-washing-machine-f4v5-8kg",
+    "sku": "NDH-1005",
+    "category_id": 2,
+    "category_slug": "washer",
+    "brand_id": 2,
+    "brand_slug": "lg",
+    "price": 36800000,
+    "compare_price": 39500000,
+    "stock": 14,
+    "images": [
+      "/images/products/washer.svg"
+    ],
+    "thumbnail": "/images/products/washer.svg",
+    "short_description": "لباسشویی ۸ کیلویی ال‌جی با هوش مصنوعی AI DD و فناوری بخارشوی ضدآلرژی Steam",
+    "description": "موتور دایرکت درایو بدون تسمه با ۱۴ برنامه شستشو، قابلیت اضافه کردن لباس حین کار Add Item و اتصال Wi-Fi از طریق ThinQ.",
+    "specs": {
+      "ظرفیت": "۸ کیلوگرم",
+      "سرعت چرخش": "۱۴۰۰ دور در دقیقه",
+      "فناوری هوش مصنوعی": "AI DD"
+    },
+    "features": [
+      "فناوری بخارشوی Steam",
+      "موتور بدون تسمه Direct Drive",
+      "سیستم عیب‌یابی هوشمند"
+    ],
+    "colors": [
+      "نقره‌ای",
+      "سفید"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 68,
+    "sales_count": 24,
+    "rating_cache": 4.8,
+    "reviews_count_cache": 31,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003ee",
+    "id": 6,
+    "name": "ماشین لباسشویی ۸ کیلویی دوو سری لایف مدل DWK-8540",
+    "name_en": "DAEWOO WASHING MACHINE DWK 8540 8KG",
+    "slug": "daewoo-washing-machine-dwk-8540-8kg",
+    "sku": "NDH-1006",
+    "category_id": 2,
+    "category_slug": "washer",
+    "brand_id": 5,
+    "brand_slug": "daewoo",
+    "price": 24900000,
+    "compare_price": 27000000,
+    "stock": 18,
+    "images": [
+      "/images/products/washer.svg"
+    ],
+    "thumbnail": "/images/products/washer.svg",
+    "short_description": "لباسشویی اینورتر دایرکت درایو دوو با دیگ الماسه نسل جدید و سیستم حباب‌ساز نانو ایربابل",
+    "description": "لباسشویی اقتصادی و باکیفیت دوو با محفظه شستشوی زمردی، سیستم چرخش آب ۱۴۰۰ دور و هیتر سرامیکی مقاوم در برابر رسوب.",
+    "specs": {
+      "ظرفیت": "۸ کیلوگرم",
+      "موتور": "دایرکت درایو ۱۴۰۰ دور",
+      "حباب‌ساز": "Air Bubble"
+    },
+    "features": [
+      "۱۴ برنامه متنوع شستشو",
+      "شستشوی سریع ۱۹ دقیقه‌ای",
+      "موتور ۱۰ سال ضمانت"
+    ],
+    "colors": [
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 75,
+    "sales_count": 27,
+    "rating_cache": 4.7,
+    "reviews_count_cache": 22,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003ef",
+    "id": 7,
+    "name": "ماشین ظرفشویی ۱۴ نفره بوش سری ۸ مدل SMS8YCI01",
+    "name_en": "BOSCH DISHWASHER SMS8YCI01 14PLACE",
+    "slug": "bosch-dishwasher-sms8yci01-14place",
+    "sku": "NDH-1007",
+    "category_id": 3,
+    "category_slug": "dishwasher",
+    "brand_id": 3,
+    "brand_slug": "bosch",
+    "price": 59000000,
+    "compare_price": 63000000,
+    "stock": 6,
+    "images": [
+      "/images/products/dishwasher.svg"
+    ],
+    "thumbnail": "/images/products/dishwasher.svg",
+    "short_description": "ماشین ظرفشویی ۳ سبده بوش آلمان با خشک‌کن زئولیت Zeolith و بازوی شستشوی چندجهته",
+    "description": "برترین مدل ظرفشویی بوش با مصرف آب تنها ۹.۵ لیتر در هر چرخه، سیستم فوق‌کم‌صدا ۴۳ دسی‌بل و سبدهای قابل تنظیم VarioFlex Pro.",
+    "specs": {
+      "ظرفیت": "۱۴ نفره (۳ سبد)",
+      "فناوری خشک‌کن": "سنگ زئولیت طبیعی",
+      "میزان صدا": "۴۳ دسی‌بل"
+    },
+    "features": [
+      "خشک‌کن زئولیت با درخشش کریستال‌ها",
+      "سبد قاشق و چنگال مجزا",
+      "ساخت کشور آلمان"
+    ],
+    "colors": [
+      "استیل ضدلک",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "36 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 82,
+    "sales_count": 30,
+    "rating_cache": 5,
+    "reviews_count_cache": 39,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f0",
+    "id": 8,
+    "name": "ماشین ظرفشویی ۱۴ نفره ال‌جی مدل DFB512",
+    "name_en": "LG DISHWASHER DFB512 14PLACE",
+    "slug": "lg-dishwasher-dfb512-14place",
+    "sku": "NDH-1008",
+    "category_id": 3,
+    "category_slug": "dishwasher",
+    "brand_id": 2,
+    "brand_slug": "lg",
+    "price": 38500000,
+    "compare_price": 41000000,
+    "stock": 9,
+    "images": [
+      "/images/products/dishwasher.svg"
+    ],
+    "thumbnail": "/images/products/dishwasher.svg",
+    "short_description": "ظرفشویی توربو اینورتر ال‌جی با فناوری QuadWash و اسپری آب از چهار زاویه مختلف",
+    "description": "مجهز به موتور Inverter Direct Drive، سیستم شستشوی دو منطقه‌ای Dual Zone برای شستشوی همزمان ظروف حساس و قابلمه‌ها.",
+    "specs": {
+      "ظرفیت": "۱۴ نفره",
+      "فناوری شستشو": "QuadWash چهار بازویی",
+      "موتور": "Inverter Direct Drive"
+    },
+    "features": [
+      "بازوی چهارگانه شستشوی کامل",
+      "سیستم کم‌صدا ۴۶ دسی‌بل",
+      "قابلیت دانلود برنامه‌های جدید"
+    ],
+    "colors": [
+      "نقره‌ای تیتانیوم",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 89,
+    "sales_count": 33,
+    "rating_cache": 4.8,
+    "reviews_count_cache": 26,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f1",
+    "id": 9,
+    "name": "تلویزیون هوشمند ۶۵ اینچ سونی مدل 65X85L 4K 120Hz",
+    "name_en": "SONY SMART TV 65X85L 4K",
+    "slug": "sony-smart-tv-65x85l-4k",
+    "sku": "NDH-1009",
+    "category_id": 4,
+    "category_slug": "tv",
+    "brand_id": 8,
+    "brand_slug": "sony",
+    "price": 76000000,
+    "compare_price": 81000000,
+    "stock": 7,
+    "images": [
+      "/images/products/tv.svg"
+    ],
+    "thumbnail": "/images/products/tv.svg",
+    "short_description": "تلویزیون ۶۵ اینچ سونی با پنل Full Array LED، پردازنده X1 4K HDR و رفرش‌ریت ۱۲۰ هرتز مخصوص بازی و فیلم",
+    "description": "مجهز به سیستم صوتی دالبی اتموس، سیستم‌عامل گوگل تی‌وی Google TV و سازگاری کامل با کنسول‌های بازی پلی‌استیشن ۵.",
+    "specs": {
+      "اندازه صفحه": "۶۵ اینچ 4K",
+      "نرخ نوسازی": "۱۲۰ هرتز واقعی",
+      "سیستم‌عامل": "Google TV"
+    },
+    "features": [
+      "نور پس‌زمینه Full Array LED",
+      "پورت HDMI 2.1 با VRR و ALLM",
+      "کیفیت تصویر سینمایی سونی"
+    ],
+    "colors": [
+      "مشکی کرومی",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A",
+    "warranty": "18 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 96,
+    "sales_count": 36,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 45,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f2",
+    "id": 10,
+    "name": "تلویزیون هوشمند ۵۵ اینچ سامسونگ مدل 55CU8000 Crystal 4K",
+    "name_en": "SAMSUNG SMART TV 55CU8000 4K",
+    "slug": "samsung-smart-tv-55cu8000-4k",
+    "sku": "NDH-1010",
+    "category_id": 4,
+    "category_slug": "tv",
+    "brand_id": 1,
+    "brand_slug": "samsung",
+    "price": 34500000,
+    "compare_price": 37000000,
+    "stock": 16,
+    "images": [
+      "/images/products/tv.svg"
+    ],
+    "thumbnail": "/images/products/tv.svg",
+    "short_description": "تلویزیون کریستال ۵۵ اینچ سامسونگ با طراحی باریک AirSlim، کیفیت رنگ Dynamic Crystal Color و سیستم تایزن",
+    "description": "وضوح تصویر 4K UHD، ریموت کنترل خورشیدی شارژی SolarCell، پشتیبانی از دستیار صوتی و امکان اتصال آسان به گوشی‌های هوشمند.",
+    "specs": {
+      "اندازه": "۵۵ اینچ",
+      "پردازنده": "Crystal Processor 4K",
+      "طراحی": "AirSlim فوق‌باریک"
+    },
+    "features": [
+      "رنگ‌های زنده Dynamic Crystal",
+      "ریموت خورشیدی سازگار با محیط‌زیست",
+      "سیستم‌عامل تایزن هوشمند"
+    ],
+    "colors": [
+      "مشکی باریک",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+",
+    "warranty": "18 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 103,
+    "sales_count": 12,
+    "rating_cache": 4.7,
+    "reviews_count_cache": 52,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f3",
+    "id": 11,
+    "name": "کولر گازی اینورتر ۲۴۰۰۰ ال‌جی سری آرت‌کول مدل Artcool Dual Inverter",
+    "name_en": "LG AIR CONDITIONER ARTCOOL 24000",
+    "slug": "lg-air-conditioner-artcool-24000",
+    "sku": "NDH-1011",
+    "category_id": 5,
+    "category_slug": "air-conditioner",
+    "brand_id": 2,
+    "brand_slug": "lg",
+    "price": 74000000,
+    "compare_price": 79000000,
+    "stock": 5,
+    "images": [
+      "/images/products/air-conditioner.svg"
+    ],
+    "thumbnail": "/images/products/air-conditioner.svg",
+    "short_description": "اسپلیت ۲۴۰۰۰ سرد و گرم ال‌جی با پنل شیشه‌ای مشکی آینه‌ای، کمپرسور دوال اینورتر و فیلتر یونایزر پلاسماستر",
+    "description": "کاهش مصرف برق تا ۷۰٪ و خنک‌کنندگی ۴۰٪ سریع‌تر با تکنولوژی Dual Inverter و کنترل از راه دور از طریق Wi-Fi و اپلیکیشن ThinQ.",
+    "specs": {
+      "ظرفیت": "۲۴۰۰۰ BTU/h",
+      "نوع عملکرد": "سرمایش و گرمایش",
+      "نوع گاز": "R410a دوستدار محیط‌زیست"
+    },
+    "features": [
+      "پنل شیشه‌ای لوکس آرت‌کول",
+      "کمپرسور دوال اینورتر با ۱۰ سال گارانتی",
+      "فیلتر پلاسمایی استریل هوا"
+    ],
+    "colors": [
+      "مشکی آینه‌ای",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A+++",
+    "warranty": "60 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 110,
+    "sales_count": 15,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 18,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f4",
+    "id": 12,
+    "name": "کولر گازی اینورتر ۱۸۰۰۰ سامسونگ مدل Wind-Free",
+    "name_en": "SAMSUNG AIR CONDITIONER WINDFREE 18000",
+    "slug": "samsung-air-conditioner-windfree-18000",
+    "sku": "NDH-1012",
+    "category_id": 5,
+    "category_slug": "air-conditioner",
+    "brand_id": 1,
+    "brand_slug": "samsung",
+    "price": 58000000,
+    "compare_price": 62000000,
+    "stock": 8,
+    "images": [
+      "/images/products/air-conditioner.svg"
+    ],
+    "thumbnail": "/images/products/air-conditioner.svg",
+    "short_description": "کولر گازی ۱۸۰۰۰ سامسونگ با فناوری خنک‌کنندگی بدون باد مستقیم WindFree از طریق ۲۳۰۰۰ میکرو حفره",
+    "description": "جلوگیری از احساس ناخوشایند باد سرد مستقیم، سیستم فیلتر بهداشتی Tri-Care و کمپرسور دیجیتال اینورتر بیست و سه هزار میکرو هول.",
+    "specs": {
+      "ظرفیت": "۱۸۰۰۰ BTU/h",
+      "فناوری منحصربه‌فرد": "WindFree بدون باد مستقیم",
+      "کمپرسور": "Digital Inverter Boost"
+    },
+    "features": [
+      "هوای خنک بدون باد آزاردهنده",
+      "مصرف انرژی تا ۷۷٪ کمتر در حالت ویندفری",
+      "فیلتر تصفیه ذرات معلق"
+    ],
+    "colors": [
+      "سفید مات",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A++",
+    "warranty": "60 ماه گارانتی معتبر شرکتی",
+    "is_inverter": true,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 117,
+    "sales_count": 18,
+    "rating_cache": 4.8,
+    "reviews_count_cache": 23,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f5",
+    "id": 13,
+    "name": "جاروبرقی کیسه‌ای فیلیپس مدل FC9174 با توان ۲۲۰۰ وات",
+    "name_en": "PHILIPS VACUUM CLEANER FC9174",
+    "slug": "philips-vacuum-cleaner-fc9174",
+    "sku": "NDH-1013",
+    "category_id": 6,
+    "category_slug": "vacuum",
+    "brand_id": 6,
+    "brand_slug": "philips",
+    "price": 13900000,
+    "compare_price": 15200000,
+    "stock": 25,
+    "images": [
+      "/images/products/vacuum.svg"
+    ],
+    "thumbnail": "/images/products/vacuum.svg",
+    "short_description": "پرفروش‌ترین جاروبرقی فیلیپس با قدرت مکش ۵۰۰ وات واقعی، فیلتر بهداشتی HEPA 13 و پارویی توربو براش",
+    "description": "مجهز به لوله تلسکوپی آلومینیومی، کیسه ۴ لیتری s-bag با دوام طولانی و سیم‌جمع‌کن خودکار با شعاع عملکرد ۱۰ متر.",
+    "specs": {
+      "توان موتور": "۲۲۰۰ وات",
+      "قدرت مکش": "۵۰۰ وات",
+      "نوع فیلتر": "HEPA 13 ضدآلرژی"
+    },
+    "features": [
+      "پارویی ویژه TriActive و توربو برای فرش و موی حیوانات",
+      "کیسه با گنجایش ۴ لیتر",
+      "فیلتراسیون ۹۹.۹۵٪ گرد و غبار"
+    ],
+    "colors": [
+      "زرشکی متالیک",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 124,
+    "sales_count": 21,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 78,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f6",
+    "id": 14,
+    "name": "جاروبرقی کیسه‌ای بوش آلمان مدل BGL8GOLDIR سری طلایی",
+    "name_en": "BOSCH VACUUM CLEANER BGL8GOLDIR",
+    "slug": "bosch-vacuum-cleaner-bgl8goldir",
+    "sku": "NDH-1014",
+    "category_id": 6,
+    "category_slug": "vacuum",
+    "brand_id": 3,
+    "brand_slug": "bosch",
+    "price": 18400000,
+    "compare_price": 19800000,
+    "stock": 20,
+    "images": [
+      "/images/products/vacuum.svg"
+    ],
+    "thumbnail": "/images/products/vacuum.svg",
+    "short_description": "جاروبرقی ۲۲۰۰ وات بوش ساخت آلمان با کیسه ۵ لیتری XXL و فناوری QuattroPower برای حداکثر مکش با کمترین مصرف",
+    "description": "بدنه مشکی طلایی مات با پوشش ضدخش، سیم بلند ۱۵ متری با شعاع عمل گسترده و فیلتر بهداشتی قابل شستشوی اولترا هپا.",
+    "specs": {
+      "توان": "۲۲۰۰ وات",
+      "شعاع کارکرد": "۱۵ متر",
+      "کشور سازنده": "آلمان"
+    },
+    "features": [
+      "کیسه فوق‌العاده جادار ۵ لیتری",
+      "سیستم PowerProtect با مکش پایدار در کیسه پر",
+      "ساخت کشور آلمان"
+    ],
+    "colors": [
+      "مشکی طلایی",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A",
+    "warranty": "36 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 131,
+    "sales_count": 24,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 64,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f7",
+    "id": 15,
+    "name": "سرخ‌کن بدون روغن فیلیپس مدل HD9270 ظرفیت ۶.۲ لیتر",
+    "name_en": "PHILIPS AIRFRYER HD9270 XL",
+    "slug": "philips-airfryer-hd9270-xl",
+    "sku": "NDH-1015",
+    "category_id": 8,
+    "category_slug": "small-appliance",
+    "brand_id": 6,
+    "brand_slug": "philips",
+    "price": 8900000,
+    "compare_price": 9700000,
+    "stock": 30,
+    "images": [
+      "/images/products/small-appliance.svg"
+    ],
+    "thumbnail": "/images/products/small-appliance.svg",
+    "short_description": "هواپز و سرخ‌کن بدون روغن فیلیپس سایز XL با تکنولوژی Rapid Air و صفحه نمایش لمسی با ۷ برنامه پخت آماده",
+    "description": "کاهش ۹۰ درصدی مصرف روغن با پخت یکنواخت و ترد. سبد نچسب قابل شستشو در ماشین ظرفشویی و قابلیت گرم‌نگه‌دارنده خودکار.",
+    "specs": {
+      "ظرفیت سبد": "۶.۲ لیتر (۱.۲ کیلوگرم سیب‌زمینی)",
+      "توان مصرفی": "۲۰۰۰ وات",
+      "تعداد برنامه‌های پیش‌فرض": "۷ برنامه لمسی"
+    },
+    "features": [
+      "فناوری گردش هوای داغ Rapid Air",
+      "پخت سریع مرغ کامل و سبزیجات",
+      "شستشوی آسان قطعات"
+    ],
+    "colors": [
+      "مشکی براق",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 138,
+    "sales_count": 27,
+    "rating_cache": 4.9,
+    "reviews_count_cache": 91,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  },
+  {
+    "_id": "6ae3501d6e6f6465680003f8",
+    "id": 16,
+    "name": "اسپرسوساز دلونگی مدل ددیکا EC685 پمپ ۱۵ بار",
+    "name_en": "DELONGHI ESPRESSO MACHINE DEDICA EC685",
+    "slug": "delonghi-espresso-machine-dedica-ec685",
+    "sku": "NDH-1016",
+    "category_id": 8,
+    "category_slug": "small-appliance",
+    "brand_id": 6,
+    "brand_slug": "philips",
+    "price": 10400000,
+    "compare_price": 11200000,
+    "stock": 22,
+    "images": [
+      "/images/products/small-appliance.svg"
+    ],
+    "thumbnail": "/images/products/small-appliance.svg",
+    "short_description": "اسپرسوساز نیمه‌صنعتی باریک دلونگی با پمپ ۱۵ بار ایتالیایی، نازل بخار حرفه‌ای کاپوچینو و سیستم حرارتی ترموبلاک",
+    "description": "بدنه استیل ضدزنگ با عرض کم ۱۵ سانتی‌متر برای هر نوع آشپزخانه، امکان تهیه اسپرسو تک و دبل، لاته و کاپوچینوی خامه‌ای.",
+    "specs": {
+      "فشار بخار": "۱۵ بار ایتالیایی",
+      "سیستم گرمایشی": "Thermblock سریع ۴۰ ثانیه‌ای",
+      "عرض دستگاه": "۱۵ سانتی‌متر فوق‌باریک"
+    },
+    "features": [
+      "نازل بخار قابل تنظیم برای فوم شیر غلیظ",
+      "قابلیت استفاده از پودر قهوه و پد ESE",
+      "سینی دو طبقه برای ماگ بلند"
+    ],
+    "colors": [
+      "استیل مات",
+      "سفید",
+      "نقره‌ای"
+    ],
+    "tags": [],
+    "energy_grade": "A",
+    "warranty": "24 ماه گارانتی معتبر شرکتی",
+    "is_inverter": false,
+    "has_installment": true,
+    "is_ready_to_ship": true,
+    "is_active": true,
+    "views_count": 145,
+    "sales_count": 30,
+    "rating_cache": 4.8,
+    "reviews_count_cache": 84,
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  }
+]

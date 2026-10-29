@@ -118,42 +118,153 @@ function getAuthUser(req) {
 }
 
 export function viteMongoDbApiPlugin() {
-  return {
-    name: 'vite-mongodb-nosql-api',
-    configureServer(server) {
-      seedMongoCollections({ forceReset: false });
+  const attachMiddleware = (server) => {
+    seedMongoCollections({ forceReset: false });
 
-      server.middlewares.use(async (req, res, next) => {
-        const urlStr = req.url || '/';
-        if (!urlStr.startsWith('/api')) {
-          return next();
+    server.middlewares.use(async (req, res, next) => {
+      const urlStr = req.url || '/';
+
+      // در محیط Vite، درخواست‌های /install.php و /index.php را به روتر React هدایت می‌کنیم تا صفحه نصب‌کننده گرافیکی نمایش داده شود
+      if (urlStr.startsWith('/install.php') || urlStr.startsWith('/index.php')) {
+        req.url = '/index.html';
+        return next();
+      }
+
+      if (!urlStr.startsWith('/api')) {
+        return next();
+      }
+
+      const parsed = new URL(urlStr, 'http://localhost:3000');
+      const path = parsed.pathname.replace(/^\/api\/?/, '/').replace(/\/+$/, '') || '/';
+      const method = (req.method || 'GET').toUpperCase();
+      const query = Object.fromEntries(parsed.searchParams.entries());
+
+      if (method === 'OPTIONS') {
+        res.statusCode = 204;
+        res.end();
+        return;
+      }
+
+      const body = ['POST', 'PUT', 'PATCH'].includes(method) ? await readJsonBody(req) : {};
+
+      try {
+        if (method === 'GET' && path === '/health') {
+          const products = readCollection('products');
+          return sendJson(res, {
+            ok: true,
+            status: 'healthy',
+            service: 'Nodehi Laravel 12 + MongoDB Document Store',
+            database: 'mongodb_document_store',
+            catalogSize: products.filter((p) => p.is_active).length,
+            timestamp: new Date().toISOString(),
+          });
         }
 
-        const parsed = new URL(urlStr, 'http://localhost:3000');
-        const path = parsed.pathname.replace(/^\/api\/?/, '/').replace(/\/+$/, '') || '/';
-        const method = (req.method || 'GET').toUpperCase();
-        const query = Object.fromEntries(parsed.searchParams.entries());
+        if (path === '/install') {
+          if (method === 'POST' && body.reseed) {
+            seedMongoCollections({ forceReset: true });
+          }
 
-        if (method === 'OPTIONS') {
-          res.statusCode = 204;
-          res.end();
-          return;
-        }
+          const products = readCollection('products');
+          const categories = readCollection('categories');
+          const brands = readCollection('brands');
+          const coupons = readCollection('coupons');
+          const orders = readCollection('orders');
+          const users = readCollection('users');
+          const settingsRows = readCollection('settings');
+          const settingsMap = {};
+          for (const r of settingsRows) {
+            settingsMap[r.key] = r.value;
+          }
+          const adminUser =
+            users.find((u) => u.role === 'SUPER_ADMIN' || u.role === 'ADMIN') || users[0] || null;
 
-        const body = ['POST', 'PUT', 'PATCH'].includes(method) ? await readJsonBody(req) : {};
-
-        try {
-          if (method === 'GET' && path === '/health') {
-            const products = readCollection('products');
+          if (method === 'GET') {
             return sendJson(res, {
               ok: true,
-              status: 'healthy',
-              service: 'Nodehi Laravel 12 + MongoDB Document Store',
-              database: 'mongodb_document_store',
-              catalogSize: products.filter((p) => p.is_active).length,
-              timestamp: new Date().toISOString(),
+              installed: products.length > 0 && Boolean(adminUser),
+              databaseConfigured: true,
+              databaseEngine: 'MongoDB / NoSQL Document Store',
+              adminExists: Boolean(adminUser),
+              catalogSeeded: products.length > 0,
+              adminPhone: adminUser?.phone || '09120000000',
+              adminName: adminUser?.name || 'مدیر فروشگاه نودهی',
+              storeName: settingsMap.store_name || 'فروشگاه لوازم خانگی نودهی',
+              phone: settingsMap.phone || '021-91000000',
+              address: settingsMap.address || 'تهران، خیابان ولیعصر، پلاک ۱۲۳، طبقه سوم',
+              mongodbUri: settingsMap.mongodb_uri || 'mongodb://127.0.0.1:27017/nodehi_store',
+              catalogSize: products.length,
+              categoriesCount: categories.length,
+              brandsCount: brands.length,
+              couponsCount: coupons.length,
+              ordersCount: orders.length,
+              installerScript: '/install.php',
             });
           }
+
+          if (method === 'POST') {
+            const adminPhone = String(body.admin_phone || body.adminPhone || '09120000000').replace(
+              /[^0-9]/g,
+              ''
+            );
+            const adminName = String(body.admin_name || body.adminName || 'مدیر فروشگاه نودهی').trim();
+            const storeName = String(body.store_name || body.storeName || 'فروشگاه لوازم خانگی نودهی').trim();
+            const supportPhone = String(body.phone || '021-91000000').trim();
+            const address = String(body.address || '').trim();
+            const mongodbUri = String(body.mongodb_uri || '').trim();
+
+            if (!/^09\d{9}$/.test(adminPhone)) {
+              return sendJson(
+                res,
+                {
+                  ok: false,
+                  error: {
+                    code: 'invalid_phone',
+                    message: 'شماره موبایل مدیر کل باید ۱۱ رقم و با 09 شروع شود.',
+                  },
+                },
+                422
+              );
+            }
+
+            if (adminUser) {
+              updateOne(
+                'users',
+                (u) => Number(u.id) === Number(adminUser.id),
+                { name: adminName, phone: adminPhone, role: 'SUPER_ADMIN' },
+                true
+              );
+            } else {
+              insertOne('users', {
+                name: adminName,
+                phone: adminPhone,
+                email: 'admin@nodehi.ir',
+                role: 'SUPER_ADMIN',
+              });
+            }
+
+            const pairs = [
+              ['store_name', storeName, 'general', true],
+              ['phone', supportPhone, 'general', true],
+              ['mobile', adminPhone, 'general', true],
+              ['address', address, 'general', true],
+              ['mongodb_uri', mongodbUri, 'database', false],
+            ];
+            for (const [k, v, g, pub] of pairs) {
+              if (v !== '') {
+                updateOne('settings', (s) => s.key === k, { key: k, value: v, group: g, is_public: pub }, true);
+              }
+            }
+
+            return sendJson(res, {
+              ok: true,
+              installed: true,
+              adminPhone,
+              message:
+                'مشخصات فروشگاه و حساب مدیر کل با موفقیت در کالکشن‌های دیتابیس MongoDB / NoSQL ذخیره شد.',
+            });
+          }
+        }
 
           if (method === 'GET' && path === '/settings/public') {
             const rows = readCollection('settings');
@@ -594,6 +705,11 @@ export function viteMongoDbApiPlugin() {
           return sendJson(res, { ok: false, error: { message: err?.message || 'Server error' } }, 500);
         }
       });
-    },
+  };
+
+  return {
+    name: 'vite-mongodb-nosql-api',
+    configureServer: attachMiddleware,
+    configurePreviewServer: attachMiddleware,
   };
 }

@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "samsung",
+    "name": "سامسونگ",
+    "nameEn": "Samsung",
+    "origin": "کره جنوبی",
+    "description": "پیشرو در نوآوری و لوازم خانگی هوشمند"
+  },
+  {
+    "slug": "lg",
+    "name": "ال‌جی",
+    "nameEn": "LG",
+    "origin": "کره جنوبی",
+    "description": "کیفیت برتر و موتورهای اینورتر خطی"
+  },
+  {
+    "slug": "bosch",
+    "name": "بوش",
+    "nameEn": "Bosch",
+    "origin": "آلمان",
+    "description": "استاندارد جهانی دوام، کیفیت و مهندسی آلمانی"
+  },
+  {
+    "slug": "snowa",
+    "name": "اسنوا",
+    "nameEn": "Snowa",
+    "origin": "ایران",
+    "description": "بزرگترین تولیدکننده لوازم خانگی با خدمات گسترده"
+  },
+  {
+    "slug": "daewoo",
+    "name": "دوو",
+    "nameEn": "Daewoo",
+    "origin": "کره جنوبی / ایران",
+    "description": "طراحی مدرن و عملکرد قدرتمند با ضمانت انتخاب"
+  },
+  {
+    "slug": "philips",
+    "name": "فیلیپس",
+    "nameEn": "Philips",
+    "origin": "هلند",
+    "description": "تخصص برتر در لوازم خرد آشپزخانه و نظافت"
+  },
+  {
+    "slug": "panasonic",
+    "name": "پاناسونیک",
+    "nameEn": "Panasonic",
+    "origin": "ژاپن",
+    "description": "دقت ژاپنی و کیفیت ماندگار"
+  },
+  {
+    "slug": "sony",
+    "name": "سونی",
+    "nameEn": "Sony",
+    "origin": "ژاپن",
+    "description": "استاندارد مرجع کیفیت تصویر و سیستم‌های تصویری"
+  }
+]

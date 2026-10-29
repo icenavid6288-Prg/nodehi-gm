@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "6ae3501d6e6f646568000001",
+    "id": 1,
+    "name": "مدیر فروشگاه نودهی",
+    "phone": "09120000000",
+    "email": "admin@nodehi.ir",
+    "role": "SUPER_ADMIN",
+    "phone_verified_at": "2026-10-29 13:54:37",
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  }
+]

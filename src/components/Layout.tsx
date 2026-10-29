@@ -387,8 +387,13 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         </div>
 
         <div className="max-w-container mx-auto px-4 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
-          <span>طراحی شده با React + TypeScript و بک‌اند Laravel برای استقرار بر هاست PHP</span>
-          <span>نسخه ۱.۰.۰ — ۱۴۰۳</span>
+          <span>طراحی شده با React + TypeScript و بک‌اند Laravel ۱۲ (MongoDB / NoSQL)</span>
+          <div className="flex items-center gap-4">
+            <Link to="/install" className="text-secondary hover:text-white font-semibold transition-colors">
+              نصب‌کننده و بررسی سلامت (/install)
+            </Link>
+            <span>نسخه ۱.۰.۰ — ۱۴۰۳</span>
+          </div>
         </div>
       </footer>
     </div>

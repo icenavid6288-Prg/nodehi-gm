@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "6ae3501d6e6f6465680002bd",
+    "id": 1,
+    "name": "zarinpal",
+    "title": "پرداخت آنلاین زرین‌پال (کلیه کارت‌های شتاب)",
+    "driver": "zarinpal",
+    "is_active": true,
+    "order": 1
+  },
+  {
+    "_id": "6ae3501d6e6f6465680002be",
+    "id": 2,
+    "name": "snappay",
+    "title": "پرداخت اقساطی اسنپ‌پی (۴ قسط ماهانه بدون بهره)",
+    "driver": "snappay",
+    "is_active": true,
+    "order": 2
+  },
+  {
+    "_id": "6ae3501d6e6f6465680002bf",
+    "id": 3,
+    "name": "card_to_card",
+    "title": "کارت به کارت با تأیید فیش",
+    "driver": "offline",
+    "is_active": true,
+    "order": 3
+  }
+]

@@ -24,12 +24,30 @@ export async function apiFetch<T>(endpoint: string, options: RequestInit = {}): 
   }
 
   const url = endpoint.startsWith('http') ? endpoint : `${API_BASE}${endpoint.startsWith('/') ? '' : '/'}${endpoint}`;
-  const response = await fetch(url, { ...options, headers });
-  const data = await response.json();
-  return data as T;
+  try {
+    const response = await fetch(url, { ...options, headers });
+    const text = await response.text();
+    if (!text) {
+      return { ok: false, error: { message: 'پاسخی از سرور دریافت نشد.' } } as unknown as T;
+    }
+    return JSON.parse(text) as T;
+  } catch (err: any) {
+    return {
+      ok: false,
+      error: { message: err?.message || 'خطا در ارتباط با سرور' },
+    } as unknown as T;
+  }
 }
 
 export const api = {
+  // Installer & Health
+  getInstallStatus: () => apiFetch<any>('/install'),
+  saveInstallSetup: (payload: Record<string, any>) =>
+    apiFetch<any>('/install', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+
   // Catalog
   getCategories: () => apiFetch<{ ok: boolean; categories: any[] }>('/categories'),
   getCategory: (slug: string) => apiFetch<{ ok: boolean; category: any }>(`/categories/${slug}`),

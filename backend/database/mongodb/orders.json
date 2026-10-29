@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "6ae3501d6e6f6465680001f5",
+    "id": 1,
+    "order_number": "ORD-14030715-DEMO1",
+    "user_id": 1,
+    "customer_name": "علی رضایی",
+    "phone": "09120000000",
+    "province": "تهران",
+    "city": "تهران",
+    "address": "خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۴۲",
+    "postal_code": "1968765432",
+    "subtotal": 89000000,
+    "discount": 0,
+    "shipping_cost": 0,
+    "total": 89000000,
+    "status": "PROCESSING",
+    "payment_status": "PAID",
+    "payment_method": "zarinpal",
+    "items": [
+      {
+        "product_id": 1,
+        "product_name": "یخچال ساید بای ساید ۳۰ فوت سامسونگ مدل RS68",
+        "product_slug": "samsung-side-by-side-rs68-30ft",
+        "thumbnail": "/images/products/refrigerator.svg",
+        "price": 89000000,
+        "quantity": 1,
+        "total": 89000000,
+        "color": "استیل دودی"
+      }
+    ],
+    "created_at": "2026-10-29 13:54:37",
+    "updated_at": "2026-10-29 13:54:37"
+  }
+]

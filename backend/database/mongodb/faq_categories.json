@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "6ae3501d6e6f646568000335",
+    "id": 1,
+    "name": "گارانتی و اصالت",
+    "slug": "warranty",
+    "icon": "shield-check",
+    "order": 1
+  },
+  {
+    "_id": "6ae3501d6e6f646568000336",
+    "id": 2,
+    "name": "ارسال و تحویل",
+    "slug": "shipping",
+    "icon": "truck",
+    "order": 2
+  }
+]

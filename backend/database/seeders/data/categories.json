@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "refrigerator",
+    "name": "یخچال و ساید بای ساید",
+    "nameEn": "Refrigerator",
+    "description": "انواع یخچال و ساید بای ساید اینورتر با گارانتی معتبر"
+  },
+  {
+    "slug": "washer",
+    "name": "ماشین لباسشویی",
+    "nameEn": "Washing Machine",
+    "description": "ماشین‌های لباسشویی اتوماتیک درب از جلو کم‌مصرف و بی‌صدا"
+  },
+  {
+    "slug": "dishwasher",
+    "name": "ماشین ظرفشویی",
+    "nameEn": "Dishwasher",
+    "description": "ماشین ظرفشویی مبله و رومیزی با رده انرژی A+++"
+  },
+  {
+    "slug": "tv",
+    "name": "تلویزیون و صوتی",
+    "nameEn": "TV & Audio",
+    "description": "تلویزیون‌های هوشمند 4K و سیستم‌های صوتی خانگی"
+  },
+  {
+    "slug": "air-conditioner",
+    "name": "کولر گازی و اسپلیت",
+    "nameEn": "Air Conditioner",
+    "description": "کولر گازی اینورتر کم‌مصرف با قابلیت سرمایش و گرمایش"
+  },
+  {
+    "slug": "vacuum",
+    "name": "جاروبرقی و نظافت",
+    "nameEn": "Vacuum Cleaner",
+    "description": "جاروبرقی‌های کیسه‌ای و مخزنی با مکش فوق‌العاده"
+  },
+  {
+    "slug": "oven",
+    "name": "فر، هود و اجاق گاز",
+    "nameEn": "Oven & Stove",
+    "description": "تجهیزات توکار آشپزخانه، هود هوشمند و اجاق گاز صفحه‌ای"
+  },
+  {
+    "slug": "small-appliance",
+    "name": "لوازم خرد آشپزخانه",
+    "nameEn": "Small Appliances",
+    "description": "سرخ‌کن بدون روغن، قهوه‌ساز، خردکن و غذاساز"
+  }
+]
