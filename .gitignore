@@ -1,0 +1,37 @@
+# وابستگی‌ها
+node_modules/
+.pnp
+.pnp.js
+
+# build
+.next/
+out/
+build/
+dist/
+
+# محلی
+.env
+.env*.local
+!backend/.env
+!dist-host/backend/.env
+
+# دیتابیس محلی SQLite
+data/
+prisma/dev.db-journal
+prisma/dev.db-wal
+prisma/dev.db-shm
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+
+# تست
+coverage/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440" fill="none">
+  <defs>
+    <linearGradient id="bgRef" x1="0" y1="0" x2="600" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F2A43"/>
+      <stop offset="55%" stop-color="#1B4066"/>
+      <stop offset="100%" stop-color="#0B8478"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="180" y1="40" x2="420" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="45%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12B5A5"/>
+      <stop offset="100%" stop-color="#0F2A43"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="440" rx="32" fill="url(#bgRef)"/>
+  <circle cx="490" cy="90" r="130" fill="#3FCFC0" fill-opacity="0.12"/>
+  <circle cx="110" cy="360" r="150" fill="#FFFFFF" fill-opacity="0.06"/>
+
+  <!-- Platform shadow -->
+  <ellipse cx="300" cy="396" rx="150" ry="16" fill="#04101C" fill-opacity="0.45"/>
+
+  <!-- Side-by-side Refrigerator Body -->
+  <rect x="185" y="42" width="230" height="348" rx="18" fill="url(#steel)" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.7"/>
+  <!-- Center split line -->
+  <line x1="296" y1="44" x2="296" y2="388" stroke="#64748B" stroke-width="3"/>
+
+  <!-- Left Door: Water/Ice Dispenser -->
+  <rect x="212" y="128" width="58" height="86" rx="10" fill="#0F172A" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="224" y="138" width="34" height="18" rx="4" fill="#12B5A5" fill-opacity="0.3"/>
+  <text x="241" y="151" font-family="sans-serif" font-size="10" font-weight="bold" fill="#3FCFC0" text-anchor="middle">-18°C</text>
+  <rect x="233" y="170" width="16" height="28" rx="4" fill="#334155"/>
+
+  <!-- Right Door: Smart InstaView Touch Panel -->
+  <rect x="316" y="88" width="76" height="148" rx="12" fill="url(#screenGlow)" stroke="#94A3B8" stroke-width="1.5"/>
+  <circle cx="354" cy="132" r="22" fill="#FFFFFF" fill-opacity="0.15"/>
+  <text x="354" y="137" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3°C</text>
+  <rect x="330" y="170" width="48" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.5"/>
+  <rect x="336" y="186" width="36" height="6" rx="3" fill="#3FCFC0" fill-opacity="0.8"/>
+  <rect x="332" y="206" width="44" height="14" rx="7" fill="#FF6B35"/>
+
+  <!-- Handles -->
+  <rect x="282" y="110" width="6" height="130" rx="3" fill="#94A3B8"/>
+  <rect x="304" y="110" width="6" height="130" rx="3" fill="#94A3B8"/>
+
+  <!-- Floating Feature Badges -->
+  <g transform="translate(46, 78)">
+    <rect width="118" height="54" rx="14" fill="#FFFFFF" fill-opacity="0.95"/>
+    <text x="59" y="24" font-family="Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#0F2A43" text-anchor="middle">اینورتر خطی A+++</text>
+    <text x="59" y="42" font-family="Tahoma, sans-serif" font-size="10" fill="#0B8478" text-anchor="middle">۱۰ سال ضمانت کمپرسور</text>
+  </g>
+
+  <g transform="translate(434, 270)">
+    <rect width="124" height="54" rx="14" fill="#FF6B35"/>
+    <text x="62" y="24" font-family="Tahoma, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">ارسال و نصب رایگان</text>
+    <text x="62" y="42" font-family="Tahoma, sans-serif" font-size="10" fill="#FFF7ED" text-anchor="middle">تحویل فوری درب منزل</text>
+  </g>
+</svg>

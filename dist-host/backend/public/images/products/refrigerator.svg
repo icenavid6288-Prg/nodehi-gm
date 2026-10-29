@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg-refrigerator" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D264C" />
+      <stop offset="100%" stop-color="#12B5A5" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="#F8FAFC" />
+  <rect x="40" y="36" width="320" height="260" rx="28" fill="url(#bg-refrigerator)" />
+  <circle cx="200" cy="150" r="64" fill="rgba(255,255,255,0.14)" />
+  <text x="200" y="172" font-size="64" text-anchor="middle">❄️</text>
+  <text x="200" y="262" font-family="Tahoma, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">یخچال و فریزر</text>
+  <rect x="110" y="320" width="180" height="36" rx="18" fill="#E2E8F0" />
+  <text x="200" y="344" font-family="Tahoma, sans-serif" font-size="14" font-weight="bold" fill="#0D264C" text-anchor="middle">فروشگاه لوازم خانگی نودهی</text>
+</svg>
