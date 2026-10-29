@@ -188,7 +188,7 @@ export const Admin: React.FC = () => {
         return;
       }
       await branding.refreshBranding();
-      setAppearanceMsg('تم رنگی، لوگو و عکس‌های اسلایدشو با موفقیت در دیتابیس SQLite ذخیره و در کل سایت اعمال شدند.');
+      setAppearanceMsg('تم رنگی، لوگو و عکس‌های اسلایدشو با موفقیت در دیتابیس MongoDB ذخیره و در کل سایت اعمال شدند.');
     } catch {
       setAppearanceErr('خطا در ارتباط با سرور');
     } finally {
@@ -215,7 +215,7 @@ export const Admin: React.FC = () => {
         <div className="flex items-center gap-2">
           <span className="px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-200 text-secondary text-xs font-bold flex items-center gap-1.5">
             <Server className="w-3.5 h-3.5" />
-            بک‌اند Laravel ۱۲ + SQLite فعال
+            بک‌اند Laravel ۱۲ + MongoDB (NoSQL) فعال
           </span>
         </div>
       </div>

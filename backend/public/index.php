@@ -13,10 +13,17 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
     exit;
 }
 
-// اجرای مستقیم با هسته SQLite بدون نیاز به SSH و Composer روی هاست اشتراکی سی‌پنل
-if (file_exists(__DIR__ . '/../bootstrap/cpanel_sqlite_kernel.php')) {
-    require_once __DIR__ . '/../bootstrap/cpanel_sqlite_kernel.php';
-    $kernel = new \Nodehi\CpanelSqliteKernel\Kernel(__DIR__);
+// اجرای مستقیم با هسته دیتابیس سندگرای MongoDB / NoSQL بدون نیاز به SSH و ترمینال روی هاست سی‌پنل
+if (file_exists(__DIR__ . '/../bootstrap/cpanel_mongodb_kernel.php')) {
+    require_once __DIR__ . '/../bootstrap/cpanel_mongodb_kernel.php';
+    $kernel = new \Nodehi\CpanelMongoKernel\Kernel(__DIR__);
+    $kernel->handle();
+    exit;
+}
+
+if (file_exists(__DIR__ . '/api_kernel.php')) {
+    require_once __DIR__ . '/api_kernel.php';
+    $kernel = new \Nodehi\CpanelMongoKernel\Kernel(__DIR__);
     $kernel->handle();
     exit;
 }
